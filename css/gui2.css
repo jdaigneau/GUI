@@ -1,0 +1,143 @@
+
+/* 
+    Created on :  8 sept, 2015, 8:57:48 PM
+    Author     : jeremydaigneau
+    email      : jeremy_daigneau@student.uml.edu
+
+    This page provides the css for index.html, contact.html, and assignments.html
+*/
+
+html, body {            /* overall style of each page */
+  
+  margin: 0;            /* set margins to 0, so there's no wasted white space near the edges of the page */
+  background-color: #cccccc; /* sets background color of each page to a light gray */
+}
+
+/* This is the beginning of the header used on index.html, contact. html, and assingments.html */
+.page-header {
+                                  /* image obtained from takeadaytrip.com http://takeadaytrip.com/great-places/massachusetts/horn-pond-woburn-winchester-ma/
+                                  /*Directs page to where the picture is located*/
+     background:url(http://takeadaytrip.com/wp-content/uploads/2013/08/DSC_0214-1000x288.jpg);
+     margin: auto;                /*Ensures picture doesn't stretch outside div*/
+     width: 100%;                 /* sizes the div to the width of the screen*/
+     height: 300px;               /* sets the height of the header div to 300px*/
+     background-size: 100%;       /* ensures the picture fills the div*/
+     background-repeat : no-repeat; /* ensures the picture doesn't repeat*/
+     box-shadow: 0 -5px 20px 5px /* places a small shadow below the div, giving it some depth */
+}
+
+.nav-bar {
+  display: block; /* sets the display to a block element so it can be centered and have a full width*/
+  width: 100%;    /*sets the width to the entire display */
+  font-weight: bold;  /*bolds the text in the div */
+  color: #FFFFFF; /* sets the text color to white */
+  background-color: #008080; /* sets the background color to a light green */
+  text-align: center; /* centers the text in the nav-bar */
+  padding: 4px; /* padding to separate the text */
+  opacity : .75; /* makes the nav-bar slightly transparent */
+  position: fixed; /*causes the nav-bar to always be on the top of the display, even after scrolling */
+}
+
+.nav-bar li {
+  display: inline-block; /* Causes the navbar items to appear horizontally */
+  padding-right: 20px;  /* Creates space between the navbar items */
+  
+}
+
+a{
+   text-decoration: none; /* makes all links not appear underlined */
+   color: white; /* makes link color white */
+}
+
+a:hover {
+    color: black; /* when links are hovered overed over, they'll turn white*/
+    text-decoration: none; /* no underlines when links are hovered over */
+}
+
+/* This is the end of the header css */
+
+/* This is the beginning of the css used in index.html */
+.introduction {
+  font-weight: bold; /*makes my name and class bold */
+  text-align: center; /*center my name can class */
+  padding: 20px; /* sapces my name and class */
+}
+
+#friends {
+    
+                                   /*Directs page to where the picture is located*/
+    content:url(https://scontent-lga1-1.xx.fbcdn.net/hphotos-xla1/v/t1.0-9/11990656_1174965362529936_340010797290829158_n.jpg?oh=18c114893e3f21277f89331247d6c23d&oe=565FA242);
+    margin: auto;                 /*Ensures picture doesn't stretch outside div*/
+    width: 25%;                   /* sizes the width of the picture to be 25% of the screen */
+    height: 20%;                  /* sizes the height of the picture to be 20% of the screen */
+    box-shadow: 0px 7px 5px
+}
+
+#friends p {
+  padding-top: 10px;              /* adds padding to the caption paragraph below the friends photo */
+}
+.title { 
+    text-align: center;           /*centers the title on the page */
+    color: Black;                 /* colors the title black */             
+    width: 1000px;                /* sets the width of the div to 1000 pixels */
+    border-bottom: 1px solid;     /* creates a one pixel thick border at the bottom of the div */
+    margin: auto;                 /*centers the div */
+    box-shadow: 0 10px 10px -12px /* adds a shadow to the border for depth */
+    
+}
+/*This is the end of the css for index.html */
+
+/* This is the beginning of the css used for assignments.html */
+.assn {
+  text-align: center; /*centers the assignment title */
+  border-bottom: 1px solid; /*makes a border below the assignment title */ 
+  margin-left: 150px; /*margins to center the div */
+  margin-right: 150px;
+  box-shadow: 0 10px 10px -12px /* a shadow for the border */
+}
+
+.assn p {
+ font-size: 22pt; /* assignment title description font size */
+}
+
+.assn-body {
+  margin-right: 25px; /* margin to move assignment list to the center */
+  text-align: center; /* centers text in div */
+  
+}
+
+.assn-body a {
+  color : black; /* makes assignment links black */
+}
+
+.assn-body a:hover {
+  color: white; /* make assignment links white when hovered over */
+}
+
+.assn-body li {
+  list-style: none; /* removes bullets from lists */
+  font-size: 20pt; /* Font size of assignments */
+  padding: 20px; /* creates space between the assignments */
+}
+
+.assn-body li p {
+  font-size: 14pt; /* font size for description of assignments */
+}
+/* This is the end of the css use for assignemtns.html */
+
+/* This is the beginning of the css used in contact.html */
+.content-title {
+  margin: auto; /* centers contact info div */
+  text-align: center; /* centers contact info title */
+  border-bottom: 1px solid; /* creates border below contact title */
+  width: 50%; /* makes div half the width of the display */
+  box-shadow: 0 10px 10px -12px /* creates shadow for border */
+}
+
+.content-body li {
+  list-style: none;  /* removes bullets from list style */
+  text-align: center; /* centers contact info */
+  font-size: 20pt; /* sets font size of contact info to 20pt */
+  padding: 20px; /* creates space between contact info */
+}
+/* This is the end of the css used for contact.html */
