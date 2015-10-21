@@ -76,7 +76,7 @@ a:hover {
 #friends p {
   padding-top: 10px;              /* adds padding to the caption paragraph below the friends photo */
 }
-.title { 
+.title {                          /* This title is used on each webpage, including the assignemnt */
     text-align: center;           /*centers the title on the page */
     color: Black;                 /* colors the title black */             
     width: 1000px;                /* sets the width of the div to 1000 pixels */
@@ -141,3 +141,42 @@ a:hover {
   padding: 20px; /* creates space between contact info */
 }
 /* This is the end of the css used for contact.html */
+
+/* This is the beginning of the CSS for Assignment 5's JSON */
+.paragraphs {      /* class for the text below the title from the JSON */
+  font-size: 18pt;    /* sets the font size */
+  text-align: center; /* centers the font */
+  width: 1000px;    /* sets the width so the text is in the center */
+  margin: auto;    /* ensures text doesn't leave the div */
+  padding-top: 15px;  /* adds padding so the text is apart from the title */
+  font-family: cursive; /* sets font to cursive */
+}
+/* End of CSS for Assignment 5 */
+
+/* This is the CSS for Assignment 6 */
+.prompt { 
+  text-align: center; /* center the input text */
+  font-size: 18pt; /* font size 18pt */
+  padding: 10px; /* spaces the input text */
+  
+}
+
+table {
+  border: 1px solid black; /* border for the table */
+  text-align: center; /* center table data */
+  margin-left: auto; /* centers table */
+  margin-right: auto; /* centers table */ 
+  margin-bottom: 50px; /* spaces table from edge */
+}
+
+td{
+    border:1px solid black;  /*border for cells */
+    width:20px; /* size of celss */
+    background:#dde; /* background color */
+}
+
+#error {
+  color: red; /* red text for error message */
+  visibility: hidden; /* hides error until needed */
+}
+ /* End of assignment 6 CSS */
