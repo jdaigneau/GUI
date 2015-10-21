@@ -1,0 +1,12 @@
+{
+	"title": "Assignment 5",
+	"author": "Jeremy Daigneau",
+	"text": {
+		"paragraphs" : [
+			"Assignment 5 is to read and display a JSON file to the browser.",
+            "All the text on the page below the header picture, including the title, is being read from a JSON file.",
+            "This is done using Javascript that was written by Professor Heines.",
+            "The Javascript goes through and stores the value of each key value pair and then displays the value. It then loops through the 'paragraphs' array in the text key and displays the string."
+		]
+	}
+}

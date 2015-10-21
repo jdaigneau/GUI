@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+    Created on  :  18 Oct, 2015, 8:34 PM
+    Author     : Jeremy Daigneau
+    email      : jeremy_daigneau@student.uml.edu
+
+    Assignment 6
+-->
+<html>
+  <head>
+    <link rel="StyleSheet" type="text/css" href="css/gui2.css"> <!-- links gui2.css css page -->
+    <title>Assignment 6</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/assignment6.js"></script>
+  </head>
+  <body>
+    <div class='page-header'> <!-- creates a div for the header for the page, the image and navbar -->
+      <div class='nav-bar'> <!-- creates a div within the header that contains just the navbar -->
+        <ul class='links'> <!-- a div that contains the list of links to other parts of the site-->
+          <li> <a href='index.html'>HOME</a> </li> <!-- a link to the home page -->
+          <li> <a href='assignments.html'> ASSIGNMENTS</a> </li> <!-- a link to the page listing the assignments -->
+          <li> <a href='contact.html'> CONTACT ME </a> </li> <!-- a link to the page with contact info -->
+        </ul> 
+      </div>
+    </div>
+    <div class="title"> <!-- a div encompassing the content below the header -->
+      <h1> Assignment 6 </h1> <!-- a title marking the beginning of the contact info -->
+    </div>   
+    <div>
+      <form id="form" action="javascript:void(0)"> <!-- keeps site on same page after javascript is ran -->
+        <div class="prompt">
+          <p> Input values to create a multiplication table. </p> <!-- Asks for user input -->
+          <label>Min Multiplicand Value:</label> <!-- min value -->
+          <input id="min_multiplicand" class="text_box" type="number" min="-100" max="100" tabindex="1" />
+          <label>Max Multiplicand Value:</label> <!-- max value -->
+          <input id="max_multiplicand" class="text_box" type="number" min="-100" max="100" tabindex="1" /> <br>
+          <label>Min Multiplier Value:</label> <!-- min value -->
+          <input id="min_multiplier" class="text_box" type="number" min="-100" max="100" tabindex="1" /> 
+          <label>Max Multiplier Value:</label> <!-- max value -->
+          <input id="max_multiplier" class="text_box" type="number" min="-100" max="100" tabindex="1" />  <br>
+        <input class="submit_box" type="submit" tabindex="5" /> <!-- submit to javascript function -->
+        </div>
+      </form>
+      <p id="error">Error: Max value must be greater than the Min value</p> <!-- Error if invalid input -->
+      <table id="result"></table> <!-- result table -->
+    </div>
+  </body>
+</html>

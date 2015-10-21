@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!--
+    Created on  :  5th Oct, 2015, 2:33 PM
+    Author     : Jeremy Daigneau
+    email      : jeremy_daigneau@student.uml.edu
+
+    Assignment 5
+    Javascript was obtained from Professor Heines at https://teaching.cs.uml.edu/~heines/91.461/91.461-2015-16f/461-assn/FormattingText-v05.jsp
+-->
+<html>
+  <head>
+      <!--
+  load jQuery library from the Google Content Delivery Network (CDN)
+  see http://encosia.com/3-reasons-why-you-should-let-google-host-jquery-for-you/
+  however, note that you obviously must be online for this to work
+  alternatively, you can download jQuery and store it locally from
+     http://jquery.com/download/
+-->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+ <link rel="StyleSheet" type="text/css" href="css/gui2.css"> <!-- links gui2.css css page -->
+  
+    <title>Assignment 5</title> <!-- Title of webpage -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+     <div class='container'>
+     <div class='page-header'> <!-- creates a div for the header for the page, the image and navbar -->
+        <div class='nav-bar'> <!-- creates a div within the header that contains just the navbar -->
+          <ul class='links'> <!-- a div that contains the list of links to other parts of the site-->
+            <li> <a href='index.html'>HOME</a> </li> <!-- a link to the home page -->
+            <li> <a href='assignments.html'> ASSIGNMENTS</a> </li> <!-- a link to the page listing the assignments -->
+            <li> <a href='contact.html'> CONTACT ME </a> </li> <!-- a link to the page with contact info -->
+          </ul> 
+        </div>
+      </div>
+     </div>
+      <!-- script to place JSON text in the placeholder on this page -->
+<!-- script to place JSON text in the placeholder (div#content) on the page -->
+<!-- load the JSON file containing your text -->
+<script type="text/javascript">
+  // this function will run after the body has been loaded
+  jQuery(document).ready( function() {
+    jQuery.get( "document.json", function( data ) {
+      placeContent( data ) ;  // construct output from the data read
+    }, "json" );  // be sure to include this third parameter for weblab.cs.uml.edu
+  });
+</script>
+  <div id='content'> <!-- Div for container where JSON text will be placed -->
+    <script type="text/javascript"> // Beginning of Professor Heines' code 
+      // N.B.  This version *does* apply the CSS.
+      function placeContent( story ) {
+        var strContent = "";
+        
+        // create dynamic content from JSON
+        strContent += "<div class='title'> <h1>" + story.title + "</h1>" ;
+        strContent += "<h2>by " + story.author + "</h2> </div>" ;
+        
+        // loop through all the paragraphs and sentences
+        for ( var para = 0 ; para < story.text.paragraphs.length ; para++ ) {
+          strContent += "<p class='paragraphs'>" ;
+          for ( var sent = 0 ; sent < story.text.paragraphs[para].length ; sent++ ) {
+            strContent += story.text.paragraphs[para][sent] ;
+          }
+          strContent += "</p>" ;
+        }
+        
+        // place dynamic content on page
+        // document.getElementById( "content" ).innerHTML = strContent ;
+        $("#content").html( strContent ) ;
+      }
+      // end of Javascript
+     </script> 
+    </div>
+  </body>
+</html>
