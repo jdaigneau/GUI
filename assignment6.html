@@ -13,6 +13,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/jquery-2.1.4.min.js"></script>
+    <script type='text/javascript' src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/jquery.validate.js"></script>
+    <script type='text/javascript' src="http://cdn.jsdelivr.net/jquery.validation/1.14.0/additional-methods.js"></script>
     <script src="js/assignment6.js"></script>
   </head>
   <body>
@@ -33,17 +35,16 @@
         <div class="prompt">
           <p> Input values to create a multiplication table. </p> <!-- Asks for user input -->
           <label>Min Multiplicand Value:</label> <!-- min value -->
-          <input id="min_multiplicand" class="text_box" type="number" min="-100" max="100" tabindex="1" />
+          <input id="min_multiplicand" name="min_multiplicand" class="text_box" type="text"  tabindex="1" />
           <label>Max Multiplicand Value:</label> <!-- max value -->
-          <input id="max_multiplicand" class="text_box" type="number" min="-100" max="100" tabindex="1" /> <br>
+          <input id="max_multiplicand" name="max_multiplicand" class="text_box" type="text"  tabindex="1" /> <br>
           <label>Min Multiplier Value:</label> <!-- min value -->
-          <input id="min_multiplier" class="text_box" type="number" min="-100" max="100" tabindex="1" /> 
+          <input id="min_multiplier" name="min_multiplier" class="text_box" type="text"  tabindex="1" /> 
           <label>Max Multiplier Value:</label> <!-- max value -->
-          <input id="max_multiplier" class="text_box" type="number" min="-100" max="100" tabindex="1" />  <br>
+          <input id="max_multiplier"  name="max_multiplier" class="text_box" type="text"  tabindex="1" />  <br>
         <input class="submit_box" type="submit" tabindex="5" /> <!-- submit to javascript function -->
         </div>
       </form>
-      <p id="error">Error: Max value must be greater than the Min value</p> <!-- Error if invalid input -->
       <table id="result"></table> <!-- result table -->
     </div>
   </body>

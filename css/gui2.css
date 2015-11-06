@@ -175,8 +175,12 @@ td{
     background:#dde; /* background color */
 }
 
-#error {
-  color: red; /* red text for error message */
-  visibility: hidden; /* hides error until needed */
+  label.error { /*css for errors */
+  margin-left: 8px ;
+  color: red ;
+  font-style: italic ;
+  font-weight: bold ;
+  padding-left : 450px; /* centers table */
+  
 }
  /* End of assignment 6 CSS */
