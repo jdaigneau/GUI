@@ -29,23 +29,39 @@
     </div>
     <div class="title"> <!-- a div encompassing the content below the header -->
       <h1> Assignment 6 </h1> <!-- a title marking the beginning of the contact info -->
-    </div>   
+    </div> 
+    <div id="swap-warning"></div>
     <div>
-      <form id="form" action="javascript:void(0)"> <!-- keeps site on same page after javascript is ran -->
+      <form id="form" name="form" method="GET" action="javascript:void(0)"> <!-- keeps site on same page after javascript is ran -->
         <div class="prompt">
           <p> Input values to create a multiplication table. </p> <!-- Asks for user input -->
           <label>Min Multiplicand Value:</label> <!-- min value -->
-          <input id="min_multiplicand" name="min_multiplicand" class="text_box" type="text"  tabindex="1" />
+          <input id="min_multiplicand" name="min_multiplicand" class="text_box" type="text"  value="" tabindex="1" required/>
+          
           <label>Max Multiplicand Value:</label> <!-- max value -->
-          <input id="max_multiplicand" name="max_multiplicand" class="text_box" type="text"  tabindex="1" /> <br>
+          <input id="max_multiplicand" name="max_multiplicand" class="text_box" type="text"  value="" tabindex="1" required /> <br>
+         
           <label>Min Multiplier Value:</label> <!-- min value -->
-          <input id="min_multiplier" name="min_multiplier" class="text_box" type="text"  tabindex="1" /> 
+          <input id="min_multiplier" name="min_multiplier" class="text_box" type="text"  value="" tabindex="1" required /> 
+         
           <label>Max Multiplier Value:</label> <!-- max value -->
-          <input id="max_multiplier"  name="max_multiplier" class="text_box" type="text"  tabindex="1" />  <br>
-        <input class="submit_box" type="submit" tabindex="5" /> <!-- submit to javascript function -->
+          <input id="max_multiplier"  name="max_multiplier" class="text_box" type="text" value="" tabindex="1" required/>  <br>
+       
+          <input class="submit_button" type="submit" tabindex="5" /> <!-- submit to javascript function -->
         </div>
       </form>
       <table id="result"></table> <!-- result table -->
     </div>
+    
+    <!-- js for validation -->
+    <script>
+     $(document).ready(function() {
+        
+        validate();         // Runs the validate code as soon as the body is ready.
+    });
+  </script>
+
   </body>
 </html>
+
+  
