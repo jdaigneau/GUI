@@ -153,7 +153,7 @@ a:hover {
 }
 /* End of CSS for Assignment 5 */
 
-/* This is the CSS for Assignment 6 */
+/* This is the CSS for Assignment 6  and 7*/
 .prompt { 
   text-align: center; /* center the input text */
   font-size: 18pt; /* font size 18pt */
@@ -183,4 +183,20 @@ td{
   padding-left : 450px; /* centers table */
   
 }
- /* End of assignment 6 CSS */
+
+/* Stlyes the validation errors */
+.error {      
+  color: red;
+  font-size: 12pt;
+  padding: 5px;
+  
+}
+
+/* styles the max/min warning swap */
+#swap-warning {
+  color: red;
+  font-size: 16pt;
+  text-align: center;
+  padding: 5px;
+}
+ /* End of assignment 6 and 7 CSS */
