@@ -1,9 +1,7 @@
-
-/* 
+/*
     Created on :  8 sept, 2015, 8:57:48 PM
     Author     : jeremydaigneau
     email      : jeremy_daigneau@student.uml.edu
-
     This page provides the css for index.html, contact.html, and assignments.html
 */
 
@@ -199,4 +197,57 @@ td{
   text-align: center;
   padding: 5px;
 }
+
  /* End of assignment 6 and 7 CSS */
+ /* End of assignment 6 and 7 CSS */
+ /* Assignment 8 CSS */
+ 
+ /* css for assignment 8 */
+  #tabs {
+    margin-top: 1em; /*tab sizing */
+    margin: auto;  
+    text-align: center; /* centers text */
+    padding-bottom: 20px; /*spaces tabs */
+    width: 50%; /* half of browser size */
+  }
+  
+  #tabs li .ui-icon-close { 
+    float: left;  /*moves tab to left */
+    margin: 0.4em 0.2em 0 0; /*margin alignment */
+    cursor: pointer; /*sets curssor */
+  
+  }
+  #add_tab { 
+    cursor: pointer; /*ser cursor */
+  }
+  
+  #max-multiplier-slider {
+   width: 200px; /*slider size */
+   margin-left: 600px; /*centers slider */
+  
+ }
+ 
+ #min-multiplier-slider {
+   width: 200px; /* slider size */
+   margin-left: 600px; /* centers slider */
+  }
+  
+  #max-multiplicand-slider {
+   width: 200px; /* slider size */
+   margin-left: 600px; /* centers slider */
+  }
+  
+  #min-multiplicand-slider {
+   width: 200px; /* slider size */
+   margin-left: 600px; /* centers sider */
+   
+  }
+
+  #delete-button {
+    margin-left: 660px; /* center button */
+    margin-bottom: 10px; /*spaces button from table */
+
+  }
+  
+  /*End of Assignment 8 CSS */
+
