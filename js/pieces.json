@@ -1,0 +1,39 @@
+window.Board = function($html) {
+  // so we can axis this from the draggable event handlers
+  var that = this;
+
+  // the DOM element referring to the board (jQuery object)
+  this.$html = $html;
+  // tiles that have been placed on the board
+  this.placedTiles = _.range(15 * 15).map(function() {return null;});
+  // tiles that are ready to be placed on the board
+  this.stagedTiles = _.range(15 * 15).map(function() {return null;});
+  // how to arrange the squares on the board
+  // each row is 15 long
+  // 0 = nothing
+  // 1 = double letter
+  // 2 = triple letter
+  // 3 = double word
+  // 4 = triple word
+  // 5 = start
+  this.squareLayout = [
+    4, 0, 0, 1, 0, 0, 0, 4, 0, 0, 0, 1, 0, 0, 4,
+    0, 3, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 3, 0,
+    0, 0, 3, 0, 0, 0, 1, 0, 1, 0, 0, 0, 3, 0, 0,
+    1, 0, 0, 3, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 1,
+    0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0,
+    0, 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 2, 0,
+    0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0,
+    4, 0, 0, 1, 0, 0, 0, 5, 0, 0, 0, 1, 0, 0, 4,
+    0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0,
+    0, 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 2, 0,
+    0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0,
+    1, 0, 0, 3, 0, 0, 0, 1, 0, 0, 0, 3, 0, 0, 1,
+    0, 0, 3, 0, 0, 0, 1, 0, 1, 0, 0, 0, 3, 0, 0,
+    0, 3, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0, 3, 0,
+    4, 0, 0, 1, 0, 0, 0, 4, 0, 0, 0, 1, 0, 0, 4
+  ];
+  // which number corresponds to which class
+  this.squareClasses = ['', 'ltr2', 'ltr3', 'wrd2', 'wrd3', 'star'];
+
+}

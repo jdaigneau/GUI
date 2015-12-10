@@ -1,0 +1,76 @@
+<!--HTML for the scrabble assignment.
+  Written by Jeremy Daigneau
+  Email: jeremy_daigneau@student.uml.edu -->
+
+<html>
+  <head>
+    <link rel="StyleSheet" type="text/css" href="css/gui2.css"> <!-- links gui2.css css page -->
+    <link rel="StyleSheet" type="text/css" href="css/scrabble.css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    
+    <script src="js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+    <script src="js/Scrabble.js"> </script>
+    <title>Jeremy Daigneau</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class='container'>
+     <div class='page-header'> <!-- creates a div for the header for the page, the image and navbar -->
+        <div class='nav-bar'> <!-- creates a div within the header that contains just the navbar -->
+          <ul class='links'> <!-- a div that contains the list of links to other parts of the site-->
+            <li> <a href='index.html'>HOME</a> </li> <!-- a link to the home page -->
+            <li> <a href='assignments.html'> ASSIGNMENTS</a> </li> <!-- a link to the page listing the assignments -->
+            <li> <a href='contact.html'> CONTACT ME </a> </li> <!-- a link to the page with contact info -->
+          </ul> 
+        </div>
+      </div>
+       <div class="title"> <!-- a div encompassing the content below the header -->
+      <h1> Scrabble </h1> <!-- a title marking the beginning of the contact info -->
+    </div> 
+    <table id="board">
+      <tr> 
+        <!-- first row of board -->
+        <td class="board-square"> </td>
+        <td class="board-square"> </td>
+        <td class="board-square" id="double-square" style= "background-image: url(doubleScore.jpg)"> </td>
+        <td class="board-square"> </td>
+        <td class="board-square" id="double-square" style= "background-image: url(doubleScore.jpg)">  </td>
+        <td class="board-square"> </td>
+        <td class="board-square"> </td>
+      </tr>
+       <tr> 
+        <!-- second row of board -->
+        <td class="board-square"> </td>
+        <td class="board-square" id="double-square" style= "background-image: url(doubleScore.jpg)"> </td>
+        <td class="board-square"> </td>
+        <td class="board-square"> </td>
+        <td class="board-square"> </td>
+        <td class="board-square" id="double-square" style= "background-image: url(doubleScore.jpg)"> </td>
+        <td class="board-square"> </td>
+      </tr> 
+    </table>
+
+    <!--scrabble score location -->
+   <div class="scrabbleScore"> </div>
+
+   <!-- rack pic location -->
+    <div id="rack-div">
+    <img id="rack-pic" src="rack.png">
+    <table class="hand">
+      <tr>
+        <!--table for hand -->
+        <td class="hand-tile"> <img id="letter-1" src="" width="59" height="59"> </td>
+        <td class="hand-tile"> <img id="letter-2" src="" width="59" height="59"> </td>
+        <td class="hand-tile"> <img id="letter-3" src="" width="59" height="59"> </td>
+        <td class="hand-tile"> <img id="letter-4" src="" width="59" height="59"> </td>
+        <td class="hand-tile"> <img id="letter-5" src="" width="59" height="59"> </td>
+        <td class="hand-tile"> <img id="letter-6" src="" width="59" height="59"> </td>
+        <td class="hand-tile"> <img id="letter-7" src="" width="59" height="59"> </td>
+      </tr>
+   </table>  
+ </div>
+ <div id="button-div">
+  <!-- button to reset tiles -->
+  <button id="new-hand" type="button">Reset Hand</button>
+</div>
