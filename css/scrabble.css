@@ -1,0 +1,77 @@
+ /**CSS for the scrabble board game  */
+
+/*sets height and width */
+ tr{
+
+	height: 50;
+	width: 50;
+
+}
+
+
+.board {
+  background-color: #ffad00;/*sets background color */
+  border: 1px dotted #BBB; /*sets border */
+  float: left; /*sets board location */
+  height: 47px; /*board height */
+  padding: 1px; /* spacing help */
+  width: 75px; /* width */
+  
+
+}
+
+/* scrabble score div*/
+.scrabbleScore {
+	width: 100%;
+	text-align: center;
+}
+
+/*board placement */
+#board {
+	margin-top: 20px;
+
+}
+
+/*sets background image */
+#board td {
+	background-image: url(blankSquare.jpg);
+	height: 88px;
+	width: 80px;
+}
+
+/*sets pic for tile rack */
+#rack-pic {
+	width: 475px;
+	height: 100px;
+	top: 680px; 
+	left: 500px;
+	position: absolute;
+	
+}
+
+/*centers pic */
+#rack-div {
+	width: 100%;
+	text-align: center;
+	
+}
+
+/* hand table location */
+.hand {
+	top: 700px; 
+	left: 500px;
+	position: absolute;
+		
+}
+
+/*hand cell settings */
+table.hand  td {
+	width: 60px;
+	height: 60px;
+}
+
+/** button css */
+#button-div {
+	width: 100%;
+	text-align: center;
+}
